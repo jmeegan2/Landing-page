@@ -30,6 +30,48 @@ p {
 .btn {
     display: inline-block;
     text-decoration: none;
+    color: var(--clr-text, white);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
     padding: .5em 1.25em;
-    background: blue;
+    background: var(--clr-accent, blue);
+    border-radius: .25em;
+    transition: 
+    transform 250ms ease-in-out,
+    opacity 250ms linear;
+
 }
+  
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+    opacity: .9;
+}
+
+.primary-title {
+    font-size: 4rem;
+    font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+
+  }
+
+  .hero {
+      color: white;
+      text-align: center;
+      padding: 15em 0;
+      background-color: #222;
+      
+      background: 
+        url(../img/shoe-3.png),
+        radial-gradient(#444, #111);
+        background-blend-mode: multiply;
+
+      /*background-size: 10%; */
+
+
+  }
